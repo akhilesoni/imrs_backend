@@ -4,7 +4,8 @@
   "description": "invoice management and reconciliation system backend",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "start": "npm index.js"
   },
   "repository": {
     "type": "git",
