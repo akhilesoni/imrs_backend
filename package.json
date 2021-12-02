@@ -1,0 +1,28 @@
+{
+  "name": "imrs_backend",
+  "version": "1.0.0",
+  "description": "invoice management and reconciliation system backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilesoni/imrs_backend.git"
+  },
+  "author": "Akhlesh soni, somesh awasthi, akshat bhanu, ishan singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhilesoni/imrs_backend/issues"
+  },
+  "homepage": "https://github.com/akhilesoni/imrs_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.14",
+    "pg": "^8.7.1"
+  }
+}
