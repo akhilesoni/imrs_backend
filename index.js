@@ -9,13 +9,8 @@ const bodyParser = require('body-parser')
 
 app.use(express.urlencoded({limit:'50mb',extended:true}))
 app.use(express.json({limit:'50mb'}))
-const corsOptions ={
-    origin:'*', 
-    credentials:true,           
-    optionSuccessStatus:200,
- }
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 app.use(routes)
 
