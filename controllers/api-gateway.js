@@ -1,5 +1,7 @@
+const { pool } = require("../db_config")
+
 const index = (req,res) => {
-    res.send("main page")
+    res.send('jdd')
 }
 
 

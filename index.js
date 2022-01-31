@@ -1,10 +1,8 @@
 const express = require('express');
 const app = express();
 
-require('dotenv').config()
-
 //dotenv
-
+require('dotenv').config()
 
 //router
 const routes = require('./routes')
@@ -12,9 +10,10 @@ const routes = require('./routes')
 //dependencies
 const bodyParser = require('body-parser')
 const cors = require('cors')
-
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(express.urlencoded({limit:'50mb',extended:true}))
+app.use(express.json({limit:'50mb'}))
+//app.use(bodyParser.json()); 
+//app.use(bodyParser.urlencoded({ extended: true })); 
 
 //cors
 app.use(cors())
