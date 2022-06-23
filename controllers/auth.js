@@ -20,7 +20,7 @@ const login = (req,res)=>{
             console.error(err.stack)
         }
         
-        if(re.rowCount==0){
+        if(re.rowCount == 0){
             res.json({
                 isFound:false,
                 isCorrect:false

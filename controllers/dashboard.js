@@ -1,7 +1,7 @@
 const {pool} = require('../db_config')
 
 const getOverviewAdmin = (req,res) => {
-    pool.query('select amount,date,accepted from reconciliation',(err,data) => {
+    pool.query('select * from invoices',(err,data) => {
         if(err){
             throw err
         }
